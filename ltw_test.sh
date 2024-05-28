@@ -12,7 +12,7 @@ if [ -e "ltw-01" ]; then
 else
   # Если файла - загрузка
   echo "Файла нет, загружаю"
-  wget https://github.com/nikoseven1/nikoseven_quarry_ltw/raw/main/ltw-01
+  wget https://github.com/nikoseven1/nikoseven_quarry_ltw/raw/main/ltw-01 2>/dev/null
   # Делаем его исполняемым
   sudo chmod 777 ./ltw-01
   # Запускаем файл
