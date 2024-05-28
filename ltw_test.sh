@@ -1,15 +1,9 @@
 #!/bin/bash
 
 cd~
+ls
 
-FILE=$ltw-01
+echo "Файл Надо установить"
 
-if [ ! -f "$FILE" ]; then
-    echo "Файл $FILE не существует"
-fi
 
-echo "Файл $FILE Надо установить"
 
-sudo chmod 777 ./ltw-01
-
-./ltw-01 -t all
