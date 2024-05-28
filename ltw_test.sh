@@ -23,3 +23,10 @@ else
   # Запускаем файл
   ./ltw-01 -t all
 fi
+
+output=$(./ltw-01 -t all) 
+if [[ $output == *"lux"* ]]; then
+    echo "Lux value found"
+else
+    echo "Sensor error"
+fi
